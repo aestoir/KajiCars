@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="All Vehicles" android:id="@+id/viewAllVehicles"/>
+    <item android:title="Available Vehicles" android:id="@+id/viewAvailableVehicles"/>
+    <item android:title="Sold Vehicles" android:id="@+id/viewSoldVehicles"/>
+    <item android:title="Company Details" android:id="@+id/viewCompanyDetails"/>
+</menu>

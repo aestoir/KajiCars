@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KajiCars</string>
+    <string name="main_activity_title">Welcome to Kaji Cars</string>
+
+    <string name="image_alt">Android Image Description</string>
+    <string name="main_create_button">Add New Vehicle</string>
+    <string name="main_view_all_button">View All Vehicles</string>
+</resources>
