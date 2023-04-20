@@ -27,9 +27,12 @@ public class SplashActivity extends AppCompatActivity {
             startActivity(intent);
         };
 
+
         //schedule this runnable to execute after 3 seconds
         ScheduledExecutorService scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
-        scheduledExecutorService.schedule(task, 2, TimeUnit.SECONDS);
+        scheduledExecutorService.schedule(task, 3, TimeUnit.SECONDS);
+
+        ;
     }
 
     @Override

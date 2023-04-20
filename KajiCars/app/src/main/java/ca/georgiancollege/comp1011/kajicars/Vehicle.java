@@ -1,6 +1,7 @@
 package ca.georgiancollege.comp1011.kajicars;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Vehicle {
     private String make;
@@ -15,6 +16,7 @@ public class Vehicle {
     private String fullSizedImagePath;
     private LocalDate dateSold;
 
+
     public Vehicle(String make, String model, String condition, String engineCylinders, int year, int numDoors, double price, String color, String thumbnailImagePath, String fullSizedImagePath) {
         this.make = make;
         this.model = model;
@@ -27,6 +29,7 @@ public class Vehicle {
         this.thumbnailImagePath = thumbnailImagePath;
         this.fullSizedImagePath = fullSizedImagePath;
     }
+
 
     // Getters and Setters for all the attributes
     public String getMake() {
@@ -116,5 +119,6 @@ public class Vehicle {
     public void setDateSold(LocalDate dateSold) {
         this.dateSold = dateSold;
     }
+
 
 }

@@ -23,7 +23,13 @@ public abstract class BaseActivity extends AppCompatActivity {
         Intent intent;
 
         switch (item.getItemId()){
-
+            case R.id.homePage:
+                // act if the current activity is not the main activity
+                if (!this.getClass().getSimpleName().equals("MainActivity")) {
+                    intent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent);
+                }
+                break;
             case R.id.viewAllVehicles:
                 intent = new Intent(getApplicationContext(), ListActivity.class);
                 startActivity(intent);
@@ -34,8 +40,8 @@ public abstract class BaseActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.viewSoldVehicles:
-//                intent = new Intent(getApplicationContext(), VehicleActivity.class);
-//                startActivity(intent);
+                intent = new Intent(getApplicationContext(), VehicleActivity.class);
+                startActivity(intent);
                 break;
             case R.id.viewCompanyDetails:
                 intent = new Intent(getApplicationContext(), CompanyActivity.class);
